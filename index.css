@@ -8,23 +8,58 @@ body{
     align-items: center;
     justify-content: center;
     box-shadow:  0 3px 6px 0 rgb(0 0 0 / 7%);
-    height: 40px;
+    height: 50px;
     padding: 0;
 }
 .nav-bar h1{
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
+    transition: font-size .5s;
 }
 .section-main{
-    height: calc(100vh - 40px);
+    height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 24px;
 }
+.section-main a{
+    text-decoration: none;
+    color: black;
+    width: 300px;
+}
+.project{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 18px 0;
+    border-radius: 10px;
+    box-shadow:  0 0px 5px 1px rgb(0 0 0 / 20%);
+    transition: font-size .5s;
+}
+.project:hover{
+    cursor: pointer;
+    box-shadow:  0 0px 5px 1px rgb(0 0 0 / 80%);
+}
+
+@media (max-width: 350px){
+    .nav-bar h1{
+        font-size: 14px;
+    }
+    .section-main a{
+        width: 95%;
+    }
+    .project{
+        font-size: 14px;
+    }
+}
 @media (max-width: 230px){
     .nav-bar h1{
         display: none;
+    }
+    .project{
+        font-size: 12px;
     }
 }
