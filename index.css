@@ -3,6 +3,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
+.inactive{
+    display: none !important;
+}
 .nav-bar{
     display: flex;
     align-items: center;
@@ -40,6 +43,83 @@ body{
     transition: font-size .5s;
 }
 .project:hover{
+    cursor: pointer;
+    box-shadow:  0 0px 5px 1px rgb(0 0 0 / 80%);
+}
+/******************************Palindrome Checker***********************************************/
+.box-container{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    hyphens: auto;
+    word-break: break-all;
+}
+.description{
+    width: 400px;
+    font-size: 12px;
+    color: #9f9f9f;
+}
+.input-text{
+    font-family: 'Montserrat', sans-serif;
+    width: 400px;
+    box-sizing: border-box;
+    padding: 10px 2px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: none;
+}
+.input-text::placeholder{
+    color: #9f9f9f;
+    font-size: 15px;
+}
+.btn-checker{
+    font-family: 'Montserrat', sans-serif;
+    width: 250px;
+    padding: 10px 0;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow:  0 0px 5px 1px rgb(0 0 0 / 20%);
+    font-weight: bold;
+}
+.btn-checker:hover{
+    cursor: pointer;
+    box-shadow:  0 0px 5px 1px rgb(0 0 0 / 80%);
+}
+.sheet{
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    height: calc(100vh - 50px);
+    background-color: rgb(0 0 0 / 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message-sheet{
+    background-color: white;
+    padding: 30px 24px;
+    width: 400px;
+    border-radius: 30px;
+    text-align: center;
+}
+.sheet-text{
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.sheet-close{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.sheet-close:hover{
     cursor: pointer;
     box-shadow:  0 0px 5px 1px rgb(0 0 0 / 80%);
 }
