@@ -41,6 +41,9 @@ body{
     border-radius: 10px;
     box-shadow:  0 0px 5px 1px rgb(0 0 0 / 20%);
     transition: font-size .5s;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .project:hover{
     cursor: pointer;
@@ -172,19 +175,33 @@ body{
 .warning p{
     font-size: 12px;
     color: gray;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .paragraph{
     text-align: center;
     font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+.number-entered,
+.number-converted{
+    font-weight: bold;
+}
+.overline{
+    border-top: 3px solid black;
 }
 
 @media (max-width: 460px){
     .description, 
     .input-text, 
     .btn-checker,
-    .message-sheet{
+    .message-sheet,
+    .main-container{
         width: 90%;
     }
+
 }
 @media (max-width: 350px){
     .nav-bar h1{
@@ -195,6 +212,12 @@ body{
     }
     .project{
         font-size: 14px;
+    }
+    .input-container{
+        flex-direction: column;
+    }
+    .paragraph{
+        font-size: 16px;
     }
 }
 @media (max-width: 230px){
