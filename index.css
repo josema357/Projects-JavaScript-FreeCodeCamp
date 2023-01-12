@@ -192,13 +192,69 @@ body{
 .overline{
     border-top: 3px solid black;
 }
+/******************************Palindrome Checker***********************************************/
+.main-cipher{
+    width: 400px;
+    height: calc(100vh - 50px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#input-text-cipher{
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    resize: none;
+    box-shadow:  0 0px 5px 1px rgb(0 0 0 / 20%);
+}
+.div-btn-cipher{
+    display: flex;
+    width: 100%; 
+    gap: 20px;
+}
+.div-btn-cipher button{
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow:  0 0px 5px 1px rgb(0 0 0 / 20%);
+    font-weight: bold;
+    cursor: pointer;
+}
+#input-text-cipher::-webkit-scrollbar{
+    appearance: none;
+    cursor: default;
+}
+#input-text-cipher::-webkit-scrollbar:vertical{
+    width: 10px;
+}
+#input-text-cipher::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+#input-text-cipher::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+#input-text-cipher::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+#input-text-cipher::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
 
 @media (max-width: 460px){
     .description, 
     .input-text, 
     .btn-checker,
     .message-sheet,
-    .main-container{
+    .main-container,
+    .main-cipher{
         width: 90%;
     }
 
