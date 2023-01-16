@@ -192,7 +192,7 @@ body{
 .overline{
     border-top: 3px solid black;
 }
-/******************************Palindrome Checker***********************************************/
+/******************************Caesars Cipher***********************************************/
 .main-cipher{
     width: 400px;
     height: calc(100vh - 50px);
@@ -213,10 +213,9 @@ body{
 .div-btn-cipher{
     display: flex;
     width: 100%; 
-    gap: 20px;
 }
 .div-btn-cipher button{
-    width: 50%;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     padding: 10px 0;
     font-size: 15px;
