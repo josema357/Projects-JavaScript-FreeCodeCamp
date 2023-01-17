@@ -225,6 +225,9 @@ body{
     font-weight: bold;
     cursor: pointer;
 }
+.div-btn-cipher button:hover{
+    box-shadow:  0 0px 5px 1px rgb(0 0 0 / 80%);
+}
 #input-text-cipher::-webkit-scrollbar{
     appearance: none;
     cursor: default;
@@ -245,6 +248,30 @@ body{
 }
 #input-text-cipher::-webkit-scrollbar-track {
     border-radius: 10px;  
+}
+/******************************Telephone Number Validator***********************************************/
+.input-number-usa{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    padding: 10px 2px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: none;
+}
+.btn-validate-usa{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow:  0 0px 5px 1px rgb(0 0 0 / 20%);
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-validate-usa:hover{
+    box-shadow:  0 0px 5px 1px rgb(0 0 0 / 80%);
 }
 
 @media (max-width: 460px){
