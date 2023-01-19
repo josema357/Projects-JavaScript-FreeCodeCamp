@@ -273,6 +273,104 @@ body{
 .btn-validate-usa:hover{
     box-shadow:  0 0px 5px 1px rgb(0 0 0 / 80%);
 }
+/******************************Cash Register***********************************************/
+.width-register{
+    width: 300px;
+}
+.description-cid{
+    width: 100%;
+    font-size: 12px;
+    color: #9f9f9f;
+}
+.input-cash{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.data-money{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.data-money span{
+    flex: 1;
+    min-width: 70px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.data-money input{
+    max-width: 55px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 2px;
+    font-size: 18px;
+    flex: 1;
+}
+.btn-start-cid{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow:  0 0px 5px 1px rgb(0 0 0 / 50%);
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-start-cid:hover{
+    box-shadow:  0 0px 5px 1px rgb(0 0 0 / 80%);
+}
+.show-cid{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    gap: 15px;
+    box-sizing: border-box;
+}
+.item-cid-title{
+    font-weight: bold;
+}
+.items-cash{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,200px);
+    justify-content: center;
+    gap: 10px;
+}
+.item-cid{
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.item-cid span:nth-child(1){
+    background-color: #9f9f9f;
+    padding: 5px;
+    width: 90px;
+}
+.item-cid span:nth-child(2){
+    padding: 5px;
+    text-align: right;
+    flex: 1;
+}
+.input-cash-cid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-cash-cid{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 @media (max-width: 460px){
     .description, 
@@ -283,7 +381,17 @@ body{
     .main-cipher{
         width: 90%;
     }
-
+    .show-cid,
+    .data-money{
+        font-size: 12px;
+    }
+    .item-cid span:nth-child(1),
+    .data-money span{
+        width: 65px;
+    }
+    .items-cash{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 @media (max-width: 350px){
     .nav-bar h1{
@@ -300,6 +408,11 @@ body{
     }
     .paragraph{
         font-size: 16px;
+    }
+}
+@media (max-width: 260px){
+    .items-cash{
+        grid-template-columns: 1fr;
     }
 }
 @media (max-width: 230px){
