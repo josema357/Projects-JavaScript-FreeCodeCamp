@@ -326,17 +326,26 @@ body{
 .btn-start-cid:hover{
     box-shadow:  0 0px 5px 1px rgb(0 0 0 / 80%);
 }
+.cash-register-ui{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
 .show-cid{
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 0 10px;
     box-sizing: border-box;
-    margin-top: 1rem;
     gap: 15px;
     box-sizing: border-box;
 }
 .item-cid-title{
     font-weight: bold;
+    text-align: center;
 }
 .items-cash{
     display: grid;
@@ -361,9 +370,12 @@ body{
     flex: 1;
 }
 .input-cash-cid{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 .form-cash-cid{
     width: 300px;
