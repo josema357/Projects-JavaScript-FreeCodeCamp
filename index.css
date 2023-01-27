@@ -49,6 +49,20 @@ body{
     cursor: pointer;
     box-shadow:  0 0px 5px 1px rgb(0 0 0 / 80%);
 }
+.box-author{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(150, 150, 150);
+}
+.box-author a{
+    text-decoration: none;
+    color: #c1c0c0;
+}
 /******************************Palindrome Checker***********************************************/
 .box-container{
     height: calc(100vh - 50px);
@@ -382,6 +396,46 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.response-cid{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    height: calc(100vh - 50px);
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-cid-response{
+    width: 97%;
+    max-width: 400px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.box-cid-response span{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.box-cid-response span img{
+    cursor: pointer;
+}
+.box-cid-response div{
+    padding-top: 30px;
+}
+.box-cid-response p{
+    padding-bottom: 10px;
+    text-align: center;
+}
+.box-cid-response div,
+.box-cid-response p{
+    font-weight: bold;
 }
 
 @media (max-width: 460px){

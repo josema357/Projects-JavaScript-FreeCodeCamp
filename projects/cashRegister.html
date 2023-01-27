@@ -52,7 +52,7 @@
                 <input type="text">
             </div>
         </div>
-        <button class="btn-start-cid">Start</button>
+        <button id="btn-star-cid-1" class="btn-start-cid">Start</button>
     </section>
     <section class="cash-register-ui inactive">
         <div class="show-cid">
@@ -100,16 +100,24 @@
             <div class="form-cash-cid">
                 <div class="data-money">
                     <span>Price</span>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
                 <div class="data-money">
                     <span>Pay with</span>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
-                <button class="btn-start-cid">Record</button>
+                <button id="btn-star-cid-2" class="btn-start-cid">Record</button>
             </div>
         </div>
     </section>
+    <section class="response-cid inactive">
+        <div class="box-cid-response">
+            <span class="btn-close-svg"><img src="../icons/close.svg" alt=""></span>
+            <div>Change Status:</div>
+            <p></p>
+        </div>
+    </section>
+    <div id="mark" class="box-author inactive"><span>By <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/cash-register">Josema</a></span></div>
     <script src="./cashRegister.js"></script>
 </body>
 </html>
